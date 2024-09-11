@@ -143,7 +143,7 @@ async def homepage(ctx):
 
 
 
-@bot.command(name="start")
+@bot.command(name="ff")
 async def homepage(ctx):
      
     view=View()
