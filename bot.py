@@ -61,7 +61,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 class makeTeamModal(discord.ui.Modal,title='Make a Team!'):
         teamName=(TextInput(label="Team Name:",style=discord.TextStyle.short))
-        TeamLeadID=(TextInput(label="Your BGMI ID: ",style=discord.TextStyle.short))
+        TeamLeadID=(TextInput(label="Your Free Fire ID: ",style=discord.TextStyle.short))
         TeamLeadRN=(TextInput(label="Your College Roll-Number: ",style=discord.TextStyle.short))
         async def on_submit(self, interaction: discord.Interaction):
             DCID=interaction.user.mention
@@ -79,7 +79,7 @@ class makeTeamModal(discord.ui.Modal,title='Make a Team!'):
         
 
 class addMemberModal(discord.ui.Modal,title='Add a Member!'):
-        ID=(TextInput(label="BGMI ID:",style=discord.TextStyle.short))
+        ID=(TextInput(label="Free Fire ID:",style=discord.TextStyle.short))
         RN=(TextInput(label="College RollNumber: ",style=discord.TextStyle.short))
 
         def __init__(self, DCID):
@@ -164,7 +164,7 @@ async def homepage(ctx):
     addMemberButton.callback=addMemberButtonClicked
     leaveButton.callback=leaveButtonClicked
     
-    await ctx.reply("Welcome To BGMI Tournament Registration!" , view=view)
+    await ctx.reply("Welcome To Free Fire Tournament Registration!" , view=view)
 
 
 
