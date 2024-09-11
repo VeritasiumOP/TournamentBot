@@ -1,0 +1,6 @@
+discord
+flask
+gunicorn
+sqlalchemy
+discord
+thread6
